@@ -12,6 +12,13 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    // Require or disallow a space before function parenthesis ("always", "never", or "ignore")
+    "space-before-function-paren": ["error", {
+      "anonymous": "ignore",
+      "named": "ignore",
+      "asyncArrow": "ignore"
+    }],
+    // "space-before-function-paren": ["error", "ignore"],
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await
